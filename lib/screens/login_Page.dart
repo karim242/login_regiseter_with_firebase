@@ -1,7 +1,5 @@
-
 import 'package:flutter/material.dart';
 import 'package:new_version_of_chat_app/screens/register_Page.dart';
-
 
 import '../constant.dart';
 import '../widget/custom_button.dart';
@@ -9,7 +7,7 @@ import '../widget/custom_textField.dart';
 
 class LoginPage extends StatelessWidget {
   const LoginPage({super.key});
-static String id ="LoginPage";
+  static String id = "LoginPage";
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -18,12 +16,14 @@ static String id ="LoginPage";
         padding: const EdgeInsets.symmetric(horizontal: 10.0),
         child: ListView(
           children: [
-            const Image(image: AssetImage("assets/images/scholar.png"),
-            height: 150,),
+            const Image(
+              image: AssetImage("assets/images/scholar.png"),
+              height: 150,
+            ),
             const Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                 Text(
+                Text(
                   "Scholar Chat ",
                   style: TextStyle(
                     fontFamily: "Pacifico",
@@ -63,7 +63,9 @@ static String id ="LoginPage";
             const SizedBox(
               height: 12,
             ),
-            customButton(text: "Log In",),
+            CustomButton(
+              text: "Log In",
+            ),
             const SizedBox(
               height: 14,
             ),
@@ -80,7 +82,7 @@ static String id ="LoginPage";
                   onTap: () {
                     Navigator.pushNamed(context, RegisterPage.id);
                   },
-                  child:const Text(
+                  child: const Text(
                     " Sing Up",
                     style: TextStyle(
                       color: Color(0xffC7EDE6),

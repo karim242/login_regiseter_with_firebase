@@ -6,7 +6,7 @@ import '../widget/custom_textField.dart';
 
 class RegisterPage extends StatelessWidget {
   const RegisterPage({super.key});
-  static String id ="RegisterPage";
+  static String id = "RegisterPage";
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -15,8 +15,10 @@ class RegisterPage extends StatelessWidget {
         padding: const EdgeInsets.symmetric(horizontal: 10.0),
         child: ListView(
           children: [
-            const Image(image: AssetImage("assets/images/scholar.png"),
-            height: 150,),
+            const Image(
+              image: AssetImage("assets/images/scholar.png"),
+              height: 150,
+            ),
             const Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
@@ -30,7 +32,9 @@ class RegisterPage extends StatelessWidget {
                 ),
               ],
             ),
-            const SizedBox(height: 20,),
+            const SizedBox(
+              height: 20,
+            ),
             const Row(
               children: [
                 Text(
@@ -43,20 +47,30 @@ class RegisterPage extends StatelessWidget {
                 ),
               ],
             ),
-            const SizedBox(height: 12,),
+            const SizedBox(
+              height: 12,
+            ),
             CustomTextField(
               hintText: "Email",
             ),
-            const SizedBox(height: 8,),
+            const SizedBox(
+              height: 8,
+            ),
             CustomTextField(
               hintText: "Password",
             ),
-            const SizedBox(height: 12,),
-            customButton(text: "Register",),
-            const SizedBox(height: 14,),
+            const SizedBox(
+              height: 12,
+            ),
+            CustomButton(
+              text: "Register",
+            ),
+            const SizedBox(
+              height: 14,
+            ),
             Row(
               children: [
-                const  Text(
+                const Text(
                   "Already have an account?",
                   style: TextStyle(
                     color: Colors.white,
@@ -66,12 +80,12 @@ class RegisterPage extends StatelessWidget {
                 GestureDetector(
                   onTap: () {
                     Navigator.pop(context);
-                    },
+                  },
                   child: const Text(
                     " Log In",
                     style: TextStyle(
                       color: Color(0xffC7EDE6),
-                      fontSize:18,
+                      fontSize: 18,
                     ),
                   ),
                 )

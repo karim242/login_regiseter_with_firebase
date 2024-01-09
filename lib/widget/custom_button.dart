@@ -1,25 +1,19 @@
-
 import 'package:flutter/material.dart';
 
-class customButton extends StatelessWidget {
-   customButton({required this.text});
-String text;
+class CustomButton extends StatelessWidget {
+  const CustomButton({super.key, required this.text});
+ final String text;
   @override
   Widget build(BuildContext context) {
     return Container(
       height: 55,
       width: double.infinity,
       decoration: BoxDecoration(
-          color: Colors.white,
-          borderRadius: BorderRadius.circular(12)
-      ),
+          color: Colors.white, borderRadius: BorderRadius.circular(12)),
       child: Center(
         child: Text(
           text,
-          style: TextStyle(
-              color:  Color(0xff2B475E),
-              fontSize: 24
-          ),
+          style: const TextStyle(color:  Color(0xff2B475E), fontSize: 24),
         ),
       ),
     );
