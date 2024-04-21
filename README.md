@@ -1,4 +1,4 @@
-# new_version_of_chat_app
+# Login and Register with firebase
 
 A new Flutter project.
 
